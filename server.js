@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const PORT = 8000
 
-
 const rappers = {
   '21 savage': {
     'age': 29,
@@ -19,7 +18,6 @@ const rappers = {
     'birthName': 'unknown',
     'birthLocation': 'unknown'
   }
-
 } 
 
 app.get('/', (request, response)=>{
