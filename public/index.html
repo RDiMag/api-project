@@ -5,15 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API Project</title>
-    <link rel="stylesheet" type="text/css" href="/main.css" />
-    <link rel="stylesheet" type="text/css" href="/normalize.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body>
-    <h1>Cult API</h1>
-    <p>Please use localhost:8000/api/city</p>
-    <input type="text" title="city" />
-    <button>Is there a cult in this city?</button>
-    <h2>Cults Nearby:</h2>
+  <body class="text-gray-600">
+    <div>
+      <div>
+        <nav>
+          <div>
+            <h1 class="text-gray-800 font-bold">
+              <a href="/">Cult Finder API</a>
+            </h1>
+          </div>
+          <ul>
+            <li class="text-gray-700 font-semibold">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="text-gray-700 font-semibold">
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li class="text-gray-700 font-semibold">
+              <a href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <header>
+        <h1 class="font-bold uppercase pb-2 border-b border-gray-500">
+          Cult Locations
+        </h1>
+      </header>
+
+      <div>
+        <input type="text" title="city" />
+        <div>
+          <button class="text-lg text-blue-700">
+            Is there a cult in this city?
+          </button>
+        </div>
+        <h2 class="mt-12 text-6x1 font-semibold">Cults Nearby:</h2>
+      </div>
+
+      <div>
+        <h3 class="font-bold mt-12 pb-2 border border-indigo-500">
+          Search by City, State
+        </h3>
+
+        <div class="bg-slate-400">
+          <!-- Card Example -->
+          <div class="pb-2 border-b border-gray-200">
+            <img src="img/globe.jpg" alt="" />
+            <div class="text-lg">
+              <span>Branch Davidians</span>
+              <span>Waco, Texas</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="font-semibold">Random Cult</h3>
+
+        <div class="mt-8">
+          <!-- Card -->
+        </div>
+
+        <div class="">
+          <div>Load more</div>
+        </div>
+      </div>
+    </main>
 
     <script type="text/javascript" src="main.js"></script>
   </body>
