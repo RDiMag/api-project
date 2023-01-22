@@ -7,9 +7,9 @@ async function apiRequest(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelectorAll('#name').innerText = data.cultName
-        // document.getElementById('#status').innerText = data.status
-        // document.getElementById('#leader').innerText = data.leader
+        document.getElementById('name').innerText = data.cultName
+        document.getElementById('status').innerText = data.status
+        document.getElementById('leader').innerText = data.leader
     }catch(error){
         console.log(error)
     }
