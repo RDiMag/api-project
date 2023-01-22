@@ -18,17 +18,19 @@ app.use(express.static('public', options));
 
 const cults = {
   'waco': {
-    'birthName': 'The Branch Davidians',
+    'cultName': 'The Branch Davidians',
     'status': 'Inactive',
     'leader': 'David Koresh, aka Vernon Howell'
 },
   'los angeles': {
-    'birthName': 'Scientology',
+    'culthName': 'Scientology',
     'status': 'Active',
     'leader': 'L. Ron Hubbard'
   },
   'unknown': {
-    'birthName': 'unknown',
+    'cultName': 'unknown',
+    'status': 'n/a',
+    'leader': 'n/a',
   }
 } 
 
