@@ -17,14 +17,14 @@ app.use(cors());
 app.use(express.static('public', options));
 
 const rappers = {
-  '21 savage': {
+  'waco': {
     'age': 29,
-    'birthName': 'Shéyaa Bin Abraham-Joseph',
+    'birthName': 'The Branch Davidians',
     'birthLocation': 'London, England',
 },
-  'chance the rapper': {
+  'los angeles': {
     'age': 29,
-    'birthName': 'Chancellor Bennett',
+    'birthName': 'Scientology',
     'birthLocation': 'Chicago, Illinois'
   },
   'unknown': {
