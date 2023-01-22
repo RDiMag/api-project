@@ -7,79 +7,79 @@
     <title>API Project</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body class="text-gray-600">
-    <div>
-      <div>
-        <nav>
-          <div>
-            <h1 class="text-gray-800 font-bold">
-              <a href="/">Cult Finder API</a>
-            </h1>
-          </div>
-          <ul>
-            <li class="text-gray-700 font-semibold">
-              <a href="#">
-                <span>Home</span>
-              </a>
-            </li>
-            <li class="text-gray-700 font-semibold">
-              <a href="#">
-                <span>About</span>
-              </a>
-            </li>
-            <li class="text-gray-700 font-semibold">
-              <a href="#">
-                <span>Contact</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+  
+  <body class="text-gray-800 m-2 flex-col">
+
+     <container class="flex rounded-lg shadow-lg bg-slate-300 justify-between w-full">
+      
+      <h1 class="text-gray-800 font-bold pt-3 pl-3">Cult Finder API</h1>
+
+      <div class="w-80">
+        <ul class="flex flex-row justify-between p-4 text-gray-700 font-semibold">
+          <li>
+            <a href="#">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
+      
+     </container>
 
-    <main>
-      <header>
-        <h1 class="font-bold uppercase pb-2 border-b border-gray-500">
-          Cult Locations
-        </h1>
-      </header>
-
-      <div>
-        <input type="text" title="city" />
+     <container class="p-6 flex w-full justify-center ">
+      <div class="p-2 w-auto bg-slate-300 rounded-lg shadow-lg text-center">
+        <div class="xl:w-96 pb-2">
+          <label for="exampleFormControlInput1" class="form-label inline-block  text-blue-700 font-semibold">Search format: 'City, State'</label>
+        </div>
         <div>
-          <button class="text-lg text-blue-700">
+          <input
+            type="text"
+            class="
+              form-control
+              block
+              w-full
+              px-3
+              py-1.5
+              mb-4
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+            "
+            id="exampleFormControlInput1"
+            placeholder="Example label"
+          />
+        </div>
+          
+         <div>
+          <button type="button" class="inline-block px-6 py-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
             Is there a cult in this city?
           </button>
-        </div>
-        <h2 class="mt-12 text-6x1 font-semibold">Cults Nearby:</h2>
-      </div>
-
-      <div>
-        <h3 class="font-bold mt-12 pb-2 border border-indigo-500">
-          Search by City, State
-        </h3>
-
-        <div class="bg-slate-400">
-          <!-- Card Example -->
-          <div class="pb-2 border-b border-gray-200">
-            <img src="img/globe.jpg" alt="" />
-            <div class="text-lg">
-              <span>Branch Davidians</span>
-              <span>Waco, Texas</span>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="font-semibold">Random Cult</h3>
-
-        <div class="mt-8">
-          <!-- Card -->
-        </div>
-
-        <div class="">
-          <div>Load more</div>
+         </div>
         </div>
       </div>
+     </container>
+      
+   
+     
+
+       
     </main>
 
     <script type="text/javascript" src="main.js"></script>
