@@ -16,20 +16,19 @@ var options = {
 app.use(cors());
 app.use(express.static('public', options));
 
-const rappers = {
+const cults = {
   'waco': {
     'birthName': 'The Branch Davidians',
     'status': 'Inactive',
+    'leader': 'David Koresh, aka Vernon Howell'
 },
   'los angeles': {
-    'age': 29,
     'birthName': 'Scientology',
-    'status': 'Active'
+    'status': 'Active',
+    'leader': 'L. Ron Hubbard'
   },
   'unknown': {
-    'age': 0,
     'birthName': 'unknown',
-    'birthLocation': 'unknown'
   }
 } 
 
@@ -37,12 +36,12 @@ app.get('/', (request, response)=>{
   response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:name', (request, response)=>{
-  const rapperName = request.params.name.toLowerCase()
-   if(rappers[rapperName]){
-    response.json (rappers[rapperName])
+app.get('/api/:city', (request, response)=>{
+  const city = request.params.city.toLowerCase()
+   if(cults[city]){
+    response.json (cults[cultName])
    } else {
-    response.json(rappers['unknown'])
+    response.json(cults['unknown'])
    }
 })
 
