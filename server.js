@@ -18,14 +18,13 @@ app.use(express.static('public', options));
 
 const rappers = {
   'waco': {
-    'age': 29,
     'birthName': 'The Branch Davidians',
-    'birthLocation': 'London, England',
+    'status': 'Inactive',
 },
   'los angeles': {
     'age': 29,
     'birthName': 'Scientology',
-    'birthLocation': 'Chicago, Illinois'
+    'status': 'Active'
   },
   'unknown': {
     'age': 0,
