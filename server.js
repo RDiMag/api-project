@@ -23,7 +23,7 @@ const cults = {
     'leader': 'David Koresh, aka Vernon Howell'
 },
   'los angeles': {
-    'culthName': 'Scientology',
+    'cultName': 'Scientology',
     'status': 'Active',
     'leader': 'L. Ron Hubbard'
   },
@@ -39,8 +39,8 @@ app.get('/', (request, response)=>{
 })
 
 app.get('/api/:city', (request, response)=>{
-  const city = request.params.city.toLowerCase()
-   if(cults[city]){
+  const cityName = request.params.city.toLowerCase()
+   if(cults[cityName]){
     response.json (cults[cultName])
    } else {
     response.json(cults['unknown'])
