@@ -41,8 +41,8 @@ app.get('/', (request, response)=>{
 app.get('/api/:city', (request, response)=>{
   const cityName = request.params.city.toLowerCase()
    if(cults[cityName]){
-    response.json (cults[cultName])
-    console.log(cults[cultName])
+    response.json (cults[cityName])
+    console.log(cults[cityName])
    } else {
     response.json(cults['unknown'])
    }
